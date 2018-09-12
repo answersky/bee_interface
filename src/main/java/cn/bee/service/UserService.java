@@ -9,4 +9,6 @@ import cn.bee.User;
  */
 public interface UserService {
     User findUserInfo();
+
+    User findUserByName(String username);
 }
