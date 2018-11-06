@@ -1,6 +1,9 @@
 package cn.bee.service.wx;
 
+import cn.bee.model.PlaceOrder;
+
 import java.util.List;
+import java.util.Map;
 
 /**
  * created by liufeng
@@ -10,7 +13,7 @@ public interface WxOrderService {
     /**
      * 用户下单
      *
-     * @param productCodes
+     * @param placeOrders
      */
-    void createOrder(List<String> productCodes, String username);
+    Map<String, Object> createOrder(List<PlaceOrder> placeOrders, String username);
 }
